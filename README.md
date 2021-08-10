@@ -41,5 +41,5 @@ The Wedding App is an event planning app that provides users with tools to organ
 ![ERD & EJS diagram](https://lucid.app/publicSegments/view/b63cc07d-dfc0-4ca9-b970-5dc380564651/image.png)
 
 ## Wireframes
-![Wireframes](/wed2.png)
+![Wireframes](/imgs/wed2.png)
 
