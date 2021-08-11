@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+    font-family: 'Bodoni Moda', serif;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.home {
+    background-image: url('imgs/homePage.jpeg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: auto;
+}
+
+.events {
+    background-image: url('imgs/editEvent.jpeg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: auto;
+}
+
+.services {
+    background-image: url('imgs/ourServices.jpeg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: auto;
+}
