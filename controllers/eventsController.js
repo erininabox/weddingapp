@@ -39,7 +39,8 @@ router.post('/', (req, res) => {
 router.get('/:id/edit', (req, res) => {
     db.Event.findById(req.params.id, (err, oneEvent) => {
         if (err) return console.log(err);
-        res.render('events/eventsEdit.ejs', { event: oneEvent });
+        console.log(oneEvent);
+        res.render('events/eventsEdit.ejs', { oneEvent: oneEvent });
     } )
 })
 

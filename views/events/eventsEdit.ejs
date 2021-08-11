@@ -15,22 +15,29 @@
 <body>
     <%- include('../partials/navbar.ejs') %>
 
-    <h1>Edit page for "<%= event.title %>"</h1>
-    <p><%= event.content %></p>
+    <h1>Edit page for "<%= oneEvent.title %>"</h1>
+    <p><%= oneEvent.content %></p>
     <br>
-    <form method="POST" action="/events/<%= event._id%>?_method=PUT">
+    <form method="POST" action="/events/<%= oneEvent._id%>?_method=PUT">
         <!-- ?_method=PUT" is a common work around to put the PUT method into the action -->
-        <label for="title">New Event:</label>
-        <input name="title" type="text">
+        <label for="title">Edit Event:</label>
+        <input name="title" type="text" placeholder="<%= oneEvent.title %>">
         <br>
-        <label for="title">New Event Content:</label>
-        <input name="content" type="text">
+        <label for="title">Edit Event Description:</label>
+        <input name="content" type="text" placeholder="<%= oneEvent.content %>">
         <br>
-        <input type="text" name="date">
+        <label for="date">Edit Date:</label>
+        <input type="text" name="date" placeholder="<%= oneEvent.date %>">
+        <br>
         <input type="submit">
     </form>
-
-
+    <p>
+    <form action="/events/<%= oneEvent %>?_method=DELETE">
+        <p>
+            <input type="submit" value="Delete this event">
+        </p>
+    </form>
+    </p>
 
 
 </body>
