@@ -23,7 +23,7 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
     db.Event.findById(req.params.id, (err, foundEvent) => {
 		if (err) return console.log(err);
-        res.render('events/eventsShow.ejs', { event: foundEvent });
+        res.render('events/eventsShow.ejs', { oneEvent: foundEvent });
 	});
 });
 
@@ -46,13 +46,16 @@ router.get('/:id/edit', (req, res) => {
 
 // EDIT PUT
 router.put('/:id', (req, res) => {
-    console.log(req.body);
-    res.send(`sample text`)
+    db.Event.findByIdAndUpdate(req.params.id, req.body, (err, oneEvent) => {
+        if (err) res.send(err);
+        res.redirect(`./${req.params.id}`);
+        // res.render('/events/eventsShow.ejs', { oneEvent: oneEvent });
+    })    
 })
 
 // DELETE
 router.delete('/:id', async (req, res) => {
-await db.Event.findByIdAndDelete(req.params.id)
+    await db.Event.findByIdAndDelete(req.params.id)
     res.redirect('/events');
 });
 
