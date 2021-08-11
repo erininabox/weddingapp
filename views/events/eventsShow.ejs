@@ -9,6 +9,14 @@
 </head>
 <body>
     <%- include('./partials/navbar.ejs') %>
+    <h1>Event Show Page</h1>
+    <h2><%= event.title %></h2>
+    <p><%= event.content %></p>
+
+    <a href="/events/<%= event._id %>/edit">Edit this Event</a>
+    <form action="/events/<%= event._id %>?_method=DELETE" method="post">
+        <input type="submit" value="Delete Event"/>
+    </form>
 
 </body>
 </html>
