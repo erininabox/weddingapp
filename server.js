@@ -18,7 +18,7 @@ app.use('/events', eventsController);
 
 /* ROUTES */
 
-// Index page
+// Index page/Home
 app.get('/', (req, res) => {
     res.render('index.ejs');
 })
@@ -29,4 +29,3 @@ app.listen(port, () => {
     rowdyResults.print();
 })
 
-console.log('testing');
