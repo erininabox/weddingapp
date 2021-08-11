@@ -23,9 +23,14 @@ app.get('/', (req, res) => {
     res.render('index.ejs');
 })
 
+//Services Page
+app.get('/services', (req, res) => {
+    res.render('services.ejs')
+})
+
 /* START THE SERVER */
 app.listen(port, () => {
-    console.log(`Server is running on port: ${PORT}`);
+    console.log(`Server is running on port: ${port}`);
     rowdyResults.print();
 })
 

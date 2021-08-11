@@ -8,7 +8,7 @@ const router = express.Router();
 //INDEX
 router.get('/', (req, res) => {
     db.Event.find({}, (err, allEvents) => {
-        res.render('index.ejs', {
+        res.render('events/eventsIndex.ejs', {
             allEvents: allEvents
         })
     })
