@@ -19,4 +19,5 @@ mongoose.connection.on('connected', () => {
 // Making the Event model available from this file
 module.exports = {
   Event: require('./events/Event.js'),
+  Vendor: require('./vendors/Vendor.js')
 }
