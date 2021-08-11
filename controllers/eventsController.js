@@ -35,12 +35,25 @@ router.post('/', (req, res) => {
     });
   });
 
+// EDIT
+router.get('/:id/edit', (req, res) => {
+    db.Event.findById(req.params.id, (err, oneEvent) => {
+        if (err) return console.log(err);
+        res.render('events/eventsEdit.ejs', { event: oneEvent });
+    } )
+})
 
-  //DELETE
-  router.delete('/:id', async (req, res) => {
-	await db.Event.findByIdAndDelete(req.params.id)
-		res.redirect('/events');
-	});
+// EDIT PUT
+router.put('/:id', (req, res) => {
+    console.log(req.body);
+    res.send(`sample text`)
+})
+
+// DELETE
+router.delete('/:id', async (req, res) => {
+await db.Event.findByIdAndDelete(req.params.id)
+    res.redirect('/events');
+});
 
 
 
