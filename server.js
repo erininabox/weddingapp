@@ -28,3 +28,5 @@ app.listen(port, () => {
     console.log(`Server is running on port: ${PORT}`);
     rowdyResults.print();
 })
+
+console.log('testing');
