@@ -28,6 +28,43 @@ app.get('/services', (req, res) => {
     res.render('services.ejs')
 })
 
+/////////////////////////////////////////////
+//Bakers Page
+app.get('/services/bakers', (req, res) => {
+    res.render('bakers.ejs')
+})
+
+//Caterers Page
+app.get('/services/caterers', (req, res) => {
+    res.render('caterers.ejs')
+})
+
+//Facilities Page
+app.get('/services/facilities', (req, res) => {
+    res.render('facilities.ejs')
+})
+
+//musicians Page
+app.get('/services/musicians', (req, res) => {
+    res.render('musicians.ejs')
+})
+
+//Officiators Page
+app.get('/services/officiators', (req, res) => {
+    res.render('officiators.ejs')
+})
+
+//Photographers Page
+app.get('/services/photographers', (req, res) => {
+    res.render('photographers.ejs')
+})
+
+//About Page
+app.get('/about', (req, res) => {
+    res.render('about.ejs')
+})
+
+
 /* START THE SERVER */
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
