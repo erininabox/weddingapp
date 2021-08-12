@@ -67,7 +67,7 @@ app.get('/about', (req, res) => {
 
 
 /* START THE SERVER */
-app.listen(process.env.port, () => {
+app.listen(process.env.port || port, () => {
     console.log(`Server is running on port: ${port}`);
     rowdyResults.print();
 })

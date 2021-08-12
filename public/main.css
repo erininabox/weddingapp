@@ -2,18 +2,54 @@
 
 body {
     font-family: 'Bodoni Moda', serif;
+    font-size: 24px;
     color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 a {
     text-decoration: none;
     color: black;
 }
+div.navigate {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#diamond {
+    width: 195px;
+    margin-top: 10px;
+}
+.title {
+    display: block;
+    width: 100%;
+}
 h1 {
     font-family: 'Cinzel Decorative', cursive;
+    font-size: 95px;
     color: rgb(38 34 98);
+    text-align: center;
 }
-div.index{
-background: rgba(255, 255, 255, .6);
+h1.homeTitle {
+    font-size: 100px;
+    margin-top: 190px;
+    margin-bottom: -43px;
+}
+#homeButton{
+    width: 100px;
+}
+.index{
+    background: rgba(255, 255, 255, .6);
+    padding: 6px;
+    align-self: center;
+    width: 200px;
+    margin: 20px;
+    margin-top: -65px;
 /* width: 300px;
 height: 250px; */
 }
