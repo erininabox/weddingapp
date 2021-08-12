@@ -1,0 +1,28 @@
+-------------------------------------
+//  To Do
+
+- Vendor functionality
+    --> Create vendor pages
+    --> Test routes
+    
+- Drop-down on homepage
+
+- Common Navbar CSS
+- Homepage Navbar CSS
+
+-------------------------------------
+// Doing Today
+
+
+-------------------------------------
+// Done
+
+- Basic event infrastructure
+- Event boilerplate code
+- Event functionality
+
+- Basic vendor infrastructure
+- Vendor boilerplate code
+- Vendor functionality begun - controllers implemented
+
+- Uploaded images

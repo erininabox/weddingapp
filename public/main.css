@@ -2,12 +2,14 @@
 
 body {
     font-family: 'Bodoni Moda', serif;
+
 }
 
 h1 {
     font-family: 'Cinzel Decorative', cursive;
 }
 
+/* .home affects only the Homepage */
 .home {
     background-image: url('imgs/homePage.jpeg');
     background-repeat: no-repeat;
@@ -15,6 +17,7 @@ h1 {
     background-size: auto;
 }
 
+/* .events affects all events ejs files */
 .events {
     background-image: url('imgs/editEvent.jpeg');
     background-repeat: no-repeat;
@@ -22,6 +25,7 @@ h1 {
     background-size: auto;
 }
 
+/* .services affects all services/vendors ejs files */
 .services {
     background-image: url('imgs/ourServiceswht.jpg');
     background-repeat: no-repeat;

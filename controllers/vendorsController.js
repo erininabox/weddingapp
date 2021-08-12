@@ -19,13 +19,13 @@ router.get('/new', (req, res) => {
     res.render('vendors/vendorsNew.ejs')
 })
 
-// //SHOW
-// router.get('/:id', (req, res) => {
-//     db.Event.findById(req.params.id, (err, foundEvent) => {
-// 		if (err) return console.log(err);
-//         res.render('events/eventsShow.ejs', { oneEvent: foundEvent });
-// 	});
-// });
+//SHOW
+router.get('/:id', (req, res) => {
+    db.Vendor.findById(req.params.id, (err, foundVendor) => {
+		if (err) return console.log(err);
+        res.render('vendors/vendorsShow.ejs', { oneVendor: foundVendor });
+	});
+});
 
 //CREATE
 router.post('/', (req, res) => {
@@ -35,23 +35,23 @@ router.post('/', (req, res) => {
     });
   });
 
-// // EDIT
-// router.get('/:id/edit', (req, res) => {
-//     db.Event.findById(req.params.id, (err, oneEvent) => {
-//         if (err) return console.log(err);
-//         console.log(oneEvent);
-//         res.render('events/eventsEdit.ejs', { oneEvent: oneEvent });
-//     } )
-// })
+// EDIT
+router.get('/:id/edit', (req, res) => {
+    db.Vendor.findById(req.params.id, (err, oneVendor) => {
+        if (err) return console.log(err);
+        console.log(oneVendor);
+        res.render('vendors/vendorsEdit.ejs', { oneVendor: oneVendor });
+    } )
+})
 
-// // EDIT PUT
-// router.put('/:id', (req, res) => {
-//     db.Event.findByIdAndUpdate(req.params.id, req.body, (err, oneEvent) => {
-//         if (err) res.send(err);
-//         res.redirect(`./${req.params.id}`);
-//         // res.render('/events/eventsShow.ejs', { oneEvent: oneEvent });
-//     })    
-// })
+// EDIT PUT
+router.put('/:id', (req, res) => {
+    db.Vendor.findByIdAndUpdate(req.params.id, req.body, (err, oneVendor) => {
+        if (err) res.send(err);
+        res.redirect(`./${req.params.id}`);
+        // res.render('/vendors/vendorsShow.ejs', { oneVendor: oneVendor });
+    })    
+})
 
 // DELETE
 router.delete('/:id', async (req, res) => {

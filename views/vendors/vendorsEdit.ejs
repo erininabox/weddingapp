@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/main.css">
+    <title>Edit Vendor</title>
+</head>
+<body class="services">
+    <%- include('../partials/navbar.ejs') %>
+
+    <h1>Edit page for "<%= oneVender.title %>"</h1>
+    <p><%= oneVendor.content %></p>
+    <br>
+    <form method="POST" action="/vendors/<%= oneVendor._id%>?_method=PUT">
+        <!-- ?_method=PUT" is a common work around to put the PUT method into the action -->
+        <label for="title">Edit Vendor:</label>
+        <input name="title" type="text" placeholder="<%= oneVendor.title %>">
+        <br>
+        <label for="title">Edit Vendor Description:</label>
+        <input name="content" type="text" placeholder="<%= oneVendor.content %>">
+        <br>
+<!-- Insert drop-down of options for types -->
+<!-- This page has info on making drop-downs as inputs -->
+<!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
+        <input type="submit">
+    </form>
+    <p>
+    <form action="/vendors/<%= oneVendor %>?_method=DELETE">
+        <p>
+            <input type="submit" value="Delete this vendor">
+        </p>
+    </form>
+    </p>
+</body>
+</html>
