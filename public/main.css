@@ -23,8 +23,8 @@ h1 {
 }
 
 .services {
-    background-image: url('imgs/ourServices.jpeg');
+    background-image: url('imgs/ourServiceswht.jpg');
     background-repeat: no-repeat;
     background-position: top, center;
-    background-size: auto;
+    background-size: 100%;
 }
