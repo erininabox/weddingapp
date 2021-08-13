@@ -15,7 +15,7 @@
 
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
-    <h1>Plan your Event</h1>
+    <h1>Plan your Event <%- include('../partials/nestedButton.ejs') %></h1>
     <form method="POST" action="/events">
         <label for="title">Your Event:</label>
         <input type="text" name="title">

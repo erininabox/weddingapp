@@ -2,13 +2,13 @@
 //  To Do
 
 - Vendor functionality
-    --> Create vendor pages
+  
     --> Test routes
     
-- Drop-down on homepage
+- Multiple Drop-downs on events
 
 - Common Navbar CSS
-- Homepage Navbar CSS
+
 
 -------------------------------------
 // Doing Today
@@ -17,6 +17,8 @@
 -------------------------------------
 // Done
 
+- Create vendor pages
+- Homepage Navbar CSS
 - Basic event infrastructure
 - Event boilerplate code
 - Event functionality
