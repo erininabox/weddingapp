@@ -5,17 +5,21 @@
     --> Create vendor pages
     --> Test routes
     
-- Drop-down on homepage
 
-- Common Navbar CSS
-- Homepage Navbar CSS
+
 
 -------------------------------------
 // Doing Today
 
+- Build out the services pages
+- Fix the Navbar
+- Fix flexbox???
+- Drop-down on homepage
 
 -------------------------------------
 // Done
+- Common Navbar CSS
+- Homepage Navbar CSS
 
 - Basic event infrastructure
 - Event boilerplate code
@@ -26,3 +30,5 @@
 - Vendor functionality begun - controllers implemented
 
 - Uploaded images
+
+- <h1> tag on homepage
