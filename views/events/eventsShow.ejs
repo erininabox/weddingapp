@@ -13,6 +13,12 @@
     <h2><%= oneEvent.title %></h2>
     <p><%= oneEvent.content %></p>
     <p><%= oneEvent.date %></p>
+    <p><%= oneEvent.photographer %></p>
+    <p><%= oneEvent.officiator %></p>
+    <p><%= oneEvent.venue %></p>
+    <p><%= oneEvent.caterer %></p>
+    <p><%= oneEvent.baker %></p>
+    <p><%= oneEvent.musician %></p>
 
     <a href="/events/<%= oneEvent._id %>/edit">Edit this Event</a>
     <form action="/events/<%= oneEvent._id %>?_method=DELETE" method="post">

@@ -29,6 +29,7 @@ router.get('/:id', (req, res) => {
 
 //CREATE
 router.post('/', (req, res) => {
+    console.log(req.body);
     db.Event.create(req.body, (err, createdEvent) => {
         if (err) return console.log(err);
         res.redirect('/events');

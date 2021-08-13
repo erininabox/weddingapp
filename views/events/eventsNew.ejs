@@ -17,15 +17,49 @@
     <%- include('../partials/navbar.ejs') %>
     <h1>Plan your Event <%- include('../partials/nestedButton.ejs') %></h1>
     <form method="POST" action="/events">
-        <label for="title">Your Event:</label>
-        <input type="text" name="title">
+        <input type="text" name="title" placeholder="Event Name">
         <br>
-        <label for="content">Event Content:</label>
-        <input type="text" name="content">
+        <input type="text" name="content" placeholder="Event Description">
         <br>
-        <label for="date">Event Date:</label>
-        <input type="text" name="date">
+        <input type="text" name="date" placeholder="Date">
         <br>
+        <select class="form-select" aria-label="Default select example" name="photographer">
+            <option selected>Choose your photographer</option>
+            <option value="Photo 1">Photo One</option>
+            <option value="Photo 2">Photo Two</option>
+            <option value="Photo 3">Photo Three</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="officiator">
+            <option selected>Choose your officiator</option>
+            <option value="Officiator 1">Officiator One</option>
+            <option value="Officiator 2">Officiator Two</option>
+            <option value="Officiator 3">Officiator Three</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="venue">
+            <option selected>Choose your venue</option>
+            <option value="Venue 1">Venue One</option>
+            <option value="Venue 2">Venue Two</option>
+            <option value="Venue 3">Venue Three</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="caterer">
+            <option selected>Choose your caterer</option>
+            <option value="Caterer 1">Caterer One</option>
+            <option value="Caterer 2">Caterer Two</option>
+            <option value="Caterer 3">Caterer Three</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="baker">
+            <option selected>Choose your baker</option>
+            <option value="Baker 1">Baker One</option>
+            <option value="Baker 2">Baker Two</option>
+            <option value="Baker 3">Baker Three</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="musician">
+            <option selected>Choose your musician</option>
+            <option value="Musician 1">Musician One</option>
+            <option value="Musician 2">Musician Two</option>
+            <option value="Musician 3">Musician Three</option>
+        </select>
+       
         <input type="submit">
     </form>
     
