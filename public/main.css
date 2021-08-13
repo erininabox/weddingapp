@@ -52,10 +52,11 @@ h1.homeTitle {
 }
 p.about{
     margin-top: -88px;
-}
-p {
     padding: 10%;
 }
+/* p {
+
+} */
 .index {
     background: rgba(255, 255, 255, .6);
     padding: 6px;
