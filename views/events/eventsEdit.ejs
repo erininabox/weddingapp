@@ -14,11 +14,12 @@
 </head>
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
-
-    <h1>Edit page for "<%= oneEvent.title %>"</h1>
+     
+    <h1>Edit page for "<%= oneEvent.title %>"<%- include('../partials/nestedButton.ejs') %> </h1>
     <p><%= oneEvent.content %></p>
     <br>
     <form method="POST" action="/events/<%= oneEvent._id%>?_method=PUT">
+       
         <!-- ?_method=PUT" is a common work around to put the PUT method into the action -->
         <label for="title">Edit Event:</label>
         <input name="title" type="text" placeholder="<%= oneEvent.title %>">

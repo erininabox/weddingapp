@@ -9,6 +9,12 @@ body {
     flex-direction: column;
     align-content: center;
 }
+.navbar {
+    background: rgba(255, 255, 255, .6);
+    width: 700px;
+    /* align-self: stretch; */
+    margin-left: 10%;
+}
 a {
     text-decoration: none;
     color: black;
@@ -18,12 +24,10 @@ div.navigate {
     text-align:center;
     justify-content: center;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
 }
 #diamond {
-    width: 195px;
-    margin-top: 10px;
+    width: 290px;
+    margin-top: -30px;
 }
 .title {
     display: block;
@@ -34,22 +38,32 @@ h1 {
     font-size: 95px;
     color: rgb(38 34 98);
     text-align: center;
+    margin-top: 20px;
+
 }
 h1.homeTitle {
-    font-size: 100px;
-    margin-top: 190px;
-    margin-bottom: -43px;
+    text-shadow: 0 0 32px rgb(249, 250, 153);
+    font-size: 115px;
+    margin-top: 200px;
+    margin-bottom: -60px;
 }
-#homeButton{
+#homeButton {
     width: 100px;
 }
-.index{
+p.about{
+    margin-top: -88px;
+}
+p {
+    padding: 10%;
+}
+.index {
     background: rgba(255, 255, 255, .6);
     padding: 6px;
     align-self: center;
     width: 200px;
-    margin: 20px;
-    margin-top: -65px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -110px;
 /* width: 300px;
 height: 250px; */
 }
