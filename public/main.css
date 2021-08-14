@@ -50,13 +50,48 @@ h1.homeTitle {
 #homeButton {
     width: 100px;
 }
+
+
 p.about{
     margin-top: -88px;
     padding: 10%;
 }
-/* p {
 
-} */
+
+
+
+h2 {
+    color: rgb(38 34 98);
+    margin-left: 60px;
+    font-size: 30px;
+  }
+h3 {
+    color: rgb(43, 39, 39);
+    margin-left: 40px;
+  }
+
+
+
+
+
+a.photo{
+    color: rgb(43, 39, 39);
+}
+p.photobody {
+    color: rgb(43, 39, 39);
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .index {
     background: rgba(255, 255, 255, .6);
     padding: 6px;
