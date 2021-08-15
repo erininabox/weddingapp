@@ -18,9 +18,9 @@
     <form method="POST" action="/vendors/<%= oneVendor._id%>?_method=PUT">
         <input type="text" name="title" placeholder="<%= oneVendor.title %>">
         <br>
-        <input type="text" name="content" placeholder="<%= oneVendor.title %>">
+        <input type="text" name="content" placeholder="<%= oneVendor.title %>" >
         <br>
-        <select class="form-select" aria-label="Default select example" name="type">
+        <select class="form-select" aria-label="vendorType" name="type" id="type">
             <!-- Displays current vendor type -->
             <option selected>
                 <%= oneVendor.type %>
