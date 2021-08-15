@@ -12,5 +12,21 @@
 <body class="services">
     <%- include('../partials/navbar.ejs') %>
 
+    <form method="POST" action="/vendors">
+        <input type="text" name="title" placeholder="Vendor Name">
+        <br>
+        <input type="text" name="content" placeholder="Vendor Description">
+        <br>
+        <select class="form-select" aria-label="Default select example" name="type">
+            <option selected>Vendor type</option>
+            <option value="photographer">photographer</option>
+            <option value="officiator">officiator</option>
+            <option value="venue">venue</option>
+            <option value="caterer">caterer</option>
+            <option value="baker">baker</option>
+            <option value="musician">musician</option>
+
+        </select>
+    </form>
 </body>
 </html>
