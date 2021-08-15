@@ -5,6 +5,7 @@ const rowdy = require('rowdy-logger');
 const methodOverride = require('method-override');
 
 const eventsController = require('./controllers/eventsController.js');
+const vendorsController = require('./controllers/vendorsController.js');
 
 /* CONFIGURATION */
 const app = express();
@@ -16,6 +17,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use('/events', eventsController);
+app.use('/vendors', vendorsController);
 
 /* ROUTES */
 
@@ -28,6 +30,7 @@ app.get('/', (req, res) => {
 app.get('/services', (req, res) => {
     res.render('services.ejs')
 })
+
 
 /////////////////////////////////////////////
 //Bakers Page
