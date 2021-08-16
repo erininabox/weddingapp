@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Cinzel+Decorative:wght@700&display=swap');
 
-/* Whole document things */
+/* Whole document things */dd
 .splash{
     top: 0;
     left: 0;
@@ -299,5 +299,12 @@ a.photo{
     background-image: url('imgs/ourServiceswht.jpg');
     background-repeat: no-repeat;
     background-position: top, center;
+    background-size: 100%;
+}
+
+.about-body {
+    background-image: url('imgs/backgrounds/pexels-jess-bailey-designs-1172849.jpg');
+    background-repeat: no-repeat;
+    background-position: top, right;
     background-size: 100%;
 }
