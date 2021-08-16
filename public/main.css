@@ -29,7 +29,7 @@ h1 {
     font-size: 100px;
     color: rgb(38 34 98);
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 /* Homepage */
@@ -82,7 +82,6 @@ a.homelank:hover{
 
 h2 {
     color: rgb(38 34 98);
-    margin-left: 70px;
     font-size: 35px;
   }
 h3 {
@@ -205,12 +204,24 @@ div.navigate {
     justify-self: center;
 }
 
+/* Serivices individual pages */
+div.about{
+    padding: 4%;
+    width: 80vw;
+    background: rgba(255, 255, 255, .7);
+    margin: 0 auto;
+    margin-top: -50px;
+}
 
 /* About Page */
 p.about{
-    margin-top: -88px;
-    padding: 10%;
+    padding: 4%;
+    width: 80vw;
+    background: rgba(255, 255, 255, .7);
+    margin: 0 auto;
+    margin-top: -50px;
 }
+
 /* Events Index Page*/
 .events-add-btn{
     text-align: center;
@@ -302,6 +313,7 @@ a.photo{
     background-size: 100%;
 }
 
+/* .about affects body of about page ejs file */
 .about-body {
     background-image: url('imgs/backgrounds/pexels-jess-bailey-designs-1172849.jpg');
     background-repeat: no-repeat;
