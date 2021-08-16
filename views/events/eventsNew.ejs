@@ -16,53 +16,60 @@
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
     <h1>Plan your Event</h1>
-    <form method="POST" action="/events">
-        <input type="text" name="title" placeholder="Event Name">
+
+    <form class="events-edit" method="POST" action="/events">
+        <span class="left-column">   
+        <p><input type="text" name="title" placeholder="Event Name"></p>
         <br>
-        <input type="text" name="content" placeholder="Event Description">
+        <p><input type="text" name="date" placeholder="Date"></p>
         <br>
-        <input type="text" name="date" placeholder="Date">
+        <p><textarea id="desc-box" name="content" placeholder="Event Description"></textarea></p>
         <br>
-        <select class="form-select" aria-label="Default select example" name="photographer">
+       
+        </span>
+
+        <span class="right-column">
+        <p><select class="form-select" aria-label="Default select example" name="photographer">
             <option selected>Choose your photographer</option>
             <option value="Becca Murry">Becca Murry</option>
             <option value="Electric Love">Electric Love</option>
             <option value="Meghan Shmolka">Meghan Shmolka</option>
             <option value="Other">Other</option>
-        </select>
-        <select class="form-select" aria-label="Default select example" name="officiator">
+        </select></p>
+        <p><select class="form-select" aria-label="Default select example" name="officiator">
             <option selected>Choose your officiator</option>
             <option value="Kate Talbot">Kate Talbot</option>
             <option value="Christa Deane">Christa Deane</option>
             <option value="Sarah Lemp">Sarah Lemp</option>
             <option value="Other">Other</option>
-        </select>
-        <select class="form-select" aria-label="Default select example" name="venue">
+        </select></p>
+        <p><select class="form-select" aria-label="Default select example" name="venue">
             <option selected>Choose your venue</option>
             <option value="San Francisco City Hall">San Francisco City Hall</option>
             <option value="The Mountain House Estate">The Mountain House Estate</option>
             <option value="Holeman Ranch">Holeman Ranch</option>
-        </select>
-        <select class="form-select" aria-label="Default select example" name="caterer">
+        </select></p>
+        <p><select class="form-select" aria-label="Default select example" name="caterer">
             <option selected>Choose your caterer</option>
             <option value="California Catering">California Catering</option>
             <option value="Paradise Catering">Paradise Catering</option>
-            <option value="Cultinary Excellence">Cultinary Excellence</option>
-        </select>
-        <select class="form-select" aria-label="Default select example" name="baker">
+            <option value="Culinary Excellence">Culinary Excellence</option>
+        </select></p>
+        <p><select class="form-select" aria-label="Default select example" name="baker">
             <option selected>Choose your baker</option>
             <option value="Patisserie Angelica">Patisserie Angelica</option>
             <option value="Lafayette Bakery and Cafe">Lafayette Bakery and Cafe</option>
             <option value="Cakes Made by M.E.">Cakes Made by M.E.</option>
-        </select>
-        <select class="form-select" aria-label="Default select example" name="musician">
+        </select></p>
+        <p><select class="form-select" aria-label="Default select example" name="musician">
             <option selected>Choose your musician</option>
             <option value="Mark Hardin">Mark Hardin</option>
             <option value="The Wedding DJ Company">The Wedding DJ Company</option>
             <option value="The Lucky Devil's Band">The Lucky Devil's Band</option>
-        </select>
+        </select></p>
        
-        <input type="submit">
+        <input class="btn edit-btns" type="submit">
+        </span>
     </form>
     
 </body>

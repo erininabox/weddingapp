@@ -1,6 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Cinzel+Decorative:wght@700&display=swap');
 
 /* Whole document things */
+.splash{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    font-family: 'Cinzel Decorative', cursive;
+    color: rgb(38 34 98);
+    text-align: center;
+    text-shadow: 0 0 32px rgb(249, 250, 153);
+    font-size: 115px;
+    margin-top: 200px;
+    margin-bottom: -60px;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 100px;
+    color: rgb(38 34 98);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+/* Homepage */
+.homeTitle {
+    display: block;
+    width: 100%;
+    text-shadow: 0 0 32px rgb(249, 250, 153);
+    font-size: 115px;
+    margin-top: 200px;
+    margin-bottom: -60px;
+}
+
 body {
     font-family: 'Bodoni Moda', serif;
     font-size: 24px;
@@ -12,20 +53,33 @@ a {
     color: black;
     padding: 15px;
 }
-h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 95px;
-    color: rgb(38 34 98);
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
+a:hover {
+    color: gray;
+    transition: 1s;
 }
+
 #homeButton {
     width: 100px;
 }
-a:hover {
-    color: gray;
+
+a.homelink{
+    color: black;
 }
+
+a.homelink:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+a.homelank{
+    color: black;
+}
+
+a.homelank:hover{
+    color: white;
+    transition: 0.5s;
+}
+
 h2 {
     color: rgb(38 34 98);
     margin-left: 70px;
@@ -49,16 +103,6 @@ h3 {
     right: 20px;
 }
 
-
-/* Homepage */
-.homeTitle {
-    display: block;
-    width: 100%;
-    text-shadow: 0 0 32px rgb(249, 250, 153);
-    font-size: 115px;
-    margin-top: 200px;
-    margin-bottom: -60px;
-}
 /* Grid container */
 div.navigate {
     text-align: center;
@@ -69,12 +113,21 @@ div.navigate {
     align-items: center;
 }
 /* Grid boxes */
+
 .index-services {
     background: rgba(255, 255, 255, .6);
     padding: 6px;
     align-self: center;
     grid-column: 1;
     justify-self: right;
+}
+.index-services:hover {
+    background: rgba(76, 72, 155, 0.6);
+    padding: 6px;
+    align-self: center;
+    grid-column: 1;
+    justify-self: right;
+    transition: .5s;
 }
 .diamond {
     width: 290px;
@@ -88,7 +141,15 @@ div.navigate {
     grid-column: 3;
     justify-self: left;
 }
-
+.index-events:hover {
+    background: rgba(76, 72, 155, 0.6);
+    padding: 6px;
+    width: 200px;
+    align-self: center;
+    grid-column: 3;
+    justify-self: left;
+    transition: .5s;
+}
 /* Services Page */
 .services-page {
     display:inline-block;
@@ -150,11 +211,41 @@ p.about{
     margin-top: -88px;
     padding: 10%;
 }
-
-
+/* Events Index Page*/
+.events-add-btn{
+    text-align: center;
+    color: black;  
+}
+.events-all{
+    margin-left: 10%;
+}
+.events-body{
+    margin: 0 auto;
+    padding: 4%;
+    width: 80%;
+    height: 60vw;
+    background: rgba(255, 255, 255, .6);
+}
 /* Events Edit Page */
+.btn{
+    border: .5px solid rgb(47, 46, 46);
+    background: rgb(107, 103, 103);
+    color: white;
+    font-size: 1em;
+    font-weight:bold;
+}
+.btn:hover{
+    background: rgb(255, 255, 255);
+    transition: 1s;
+    color:rgb(85, 82, 82)
+}
 
+.form-select{
+    border: .5px solid rgb(47, 46, 46);
+    font-size: .85em;
+}
 .events-edit {
+    background: rgba(255, 255, 255, 0.496);
     width: 80vw;
     display: flex;
     justify-content: space-around;
@@ -168,8 +259,13 @@ p.about{
 #desc-box {
     box-sizing: border-box;
     height: 300px;
+    width: 100%;
 }
 
+/* Events Show Page */
+.showh2{
+    text-align: center;
+}
 
 /* Photographers Page */
 p.photobody {

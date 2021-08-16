@@ -12,16 +12,17 @@
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
     <h1>All the Events</h1>
-    <a href="/events/new">Add an Event</a>
-    <ul>
-        <% for (let i = 0; i < allEvents.length; i++) { %>
-            <li>
-                <a href="/events/<%= allEvents[i]._id %>">
-                    <%= allEvents[i].title %>
-                </a>
-                <br><%= allEvents[i].date %>
-            </li>
+    <p class="events-add-btn"><button><a href="/events/new">Add an Event</a></button></p>
+
+       <div class="events-body">
+           <% for (let i = 0; i < allEvents.length; i++) { %>
+           
+                <p class="events-all"><a href="/events/<%= allEvents[i]._id %>">
+                    <%= allEvents[i].title %>: &nbsp;
+               <%= allEvents[i].date %>
+            </a>
+            </p>
         <% } %>
-    </ul>
+    </div>
 </body>
 </html>

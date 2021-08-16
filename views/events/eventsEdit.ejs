@@ -31,6 +31,7 @@
             </span>
 
             <span class="right-column">
+                <br>
                 <p><select class="form-select" aria-label="Default select example" name="photographer">
                     <option selected>Choose your photographer</option>
                     <option value="Becca Murry">Becca Murry</option>
@@ -52,6 +53,7 @@
                     <option value="San Francisco City Hall">San Francisco City Hall</option>
                     <option value="The Mountain House Estate">The Mountain House Estate</option>
                     <option value="Holeman Ranch">Holeman Ranch</option>
+                    <option value="Other">Other</option>
                 </select></p>
                 
                 <p><select class="form-select" aria-label="Default select example" name="caterer">
@@ -59,6 +61,7 @@
                     <option value="California Catering">California Catering</option>
                     <option value="Paradise Catering">Paradise Catering</option>
                     <option value="Cultinary Excellence">Cultinary Excellence</option>
+                    <option value="Other">Other</option>
                 </select></p>
 
                 <p><select class="form-select" aria-label="Default select example" name="baker">
@@ -66,6 +69,7 @@
                     <option value="Patisserie Angelica">Patisserie Angelica</option>
                     <option value="Lafayette Bakery and Cafe">Lafayette Bakery and Cafe</option>
                     <option value="Cakes Made by M.E.">Cakes Made by M.E.</option>
+                    <option value="Other">Other</option>
                 </select></p>
 
                 <p><select class="form-select" aria-label="Default select example" name="musician">
@@ -73,12 +77,13 @@
                     <option value="Mark Hardin">Mark Hardin</option>
                     <option value="The Wedding DJ Company">The Wedding DJ Company</option>
                     <option value="The Lucky Devil's Band">The Lucky Devil's Band</option>
+                    <option value="Other">Other</option>
                 </select></p>
-            
-                <input class="edit-btns" type="submit">
+                
+                <input class=" btn edit-btns" type="submit">
                 <button 
                 data-eventid= "<%= oneEvent._id %>"
-                id="delete-btn">Delete this event</button>
+                class= "btn" id="delete-btn">Delete this event</button>
             </span>
         </form>
 
