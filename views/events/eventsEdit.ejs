@@ -15,7 +15,7 @@
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
      
-    <h1>Edit page for "<%= oneEvent.title %>"<%- include('../partials/nestedButton.ejs') %> </h1>
+    <h1>Edit page for "<%= oneEvent.title %>" </h1>
     <p><%= oneEvent.content %></p>
     <br>
     <form method="POST" action="/events/<%= oneEvent._id%>?_method=PUT">
