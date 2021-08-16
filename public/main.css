@@ -1,65 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Cinzel+Decorative:wght@700&display=swap');
 
+/* Whole document things */
 body {
     font-family: 'Bodoni Moda', serif;
     font-size: 24px;
     color: black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-.navbar {
-    background: rgba(255, 255, 255, .6);
-    width: 700px;
-    /* align-self: stretch; */
-    margin-left: 10%;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
     color: black;
-}
-div.navigate {
-    display: flex;
-    text-align:center;
-    justify-content: center;
-    width: 100%;
-}
-#diamond {
-    width: 290px;
-    margin-top: -30px;
-}
-.title {
-    display: block;
-    width: 100%;
+    padding: 15px;
 }
 h1 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 95px;
     color: rgb(38 34 98);
     text-align: center;
-    margin-top: 20px;
-
-}
-h1.homeTitle {
-    text-shadow: 0 0 32px rgb(249, 250, 153);
-    font-size: 115px;
-    margin-top: 200px;
-    margin-bottom: -60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 #homeButton {
     width: 100px;
 }
-
-
-p.about{
-    margin-top: -88px;
-    padding: 10%;
+a:hover {
+    color: gray;
 }
-
-
-
-
 h2 {
     color: rgb(38 34 98);
     margin-left: 70px;
@@ -71,39 +37,131 @@ h3 {
   }
 
 
-
-
-
-a.photo{
-    color: rgb(43, 39, 39);
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, .6);
+    padding: 15px;
+    width: 100%;
 }
+#homeButtonNav {
+    width: 60px;
+    position: relative;
+    right: 20px;
+}
+
+
+/* Homepage */
+.homeTitle {
+    display: block;
+    width: 100%;
+    text-shadow: 0 0 32px rgb(249, 250, 153);
+    font-size: 115px;
+    margin-top: 200px;
+    margin-bottom: -60px;
+}
+/* Grid container */
+div.navigate {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 290px 1fr;
+    width: 100%;
+    padding: auto 20px;
+    align-items: center;
+}
+/* Grid boxes */
+.index-services {
+    background: rgba(255, 255, 255, .6);
+    padding: 6px;
+    align-self: center;
+    grid-column: 1;
+    justify-self: right;
+}
+.diamond {
+    width: 290px;
+    grid-column: 2;
+}
+.index-events {
+    background: rgba(255, 255, 255, .6);
+    padding: 6px;
+    width: 200px;
+    align-self: center;
+    grid-column: 3;
+    justify-self: left;
+}
+
+/* Services Page */
+.services-page {
+    display:inline-block;
+    width: 300px;
+    background: rgba(255, 255, 255, .6);
+    padding: 6px;
+    align-self: center;
+}
+/* Grid wrapper */
+.services-grid {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    padding: 20px 20px;
+    justify-content: center;
+}
+/* Grid containers */
+.services-container1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+}
+.services-container2 {
+    min-width: 400px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+.services-container3 {
+    min-width: 400px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+}
+.services-container4 {
+    min-width: 400px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+}
+.services-container5 {
+    min-width: 400px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+}
+.services-container6 {
+    min-width: 400px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+/* About Page */
+p.about{
+    margin-top: -88px;
+    padding: 10%;
+}
+
+
+/* Photographers Page */
 p.photobody {
     color: rgb(43, 39, 39);
     margin-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-.index {
-    background: rgba(255, 255, 255, .6);
-    padding: 6px;
-    align-self: center;
-    width: 200px;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: -110px;
-/* width: 300px;
-height: 250px; */
+a.photo{
+    color: rgb(43, 39, 39);
 }
 
+
+/* Background images */
 /* .home affects only the Homepage */
 .home {
     background-image: url('imgs/homePage.jpeg');
