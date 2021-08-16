@@ -76,15 +76,12 @@
                 </select></p>
             
                 <input class="edit-btns" type="submit">
-                <button id="delete-btn">Delete this event</button>
+                <button 
+                data-eventid= "<%= oneEvent._id %>"
+                id="delete-btn">Delete this event</button>
             </span>
         </form>
 
-        <!-- <form action="/events/<%= oneEvent %>?_method=DELETE">
-            <span class="delete-btn">
-                <input class="edit-btns" type="submit" value="Delete this event">
-            </span>
-        </form> -->
 
     </div>
 

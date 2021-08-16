@@ -57,6 +57,7 @@ router.put('/:id', (req, res) => {
 // DELETE
 router.delete('/:id', async (req, res) => {
     await db.Event.findByIdAndDelete(req.params.id)
+    console.log('this is the delete route',req.params.id)
     res.redirect('/events');
 });
 

@@ -153,9 +153,7 @@ p.about{
 
 
 /* Events Edit Page */
-* {
-    border: 1px solid black;
-}
+
 .events-edit {
     width: 80vw;
     display: flex;
