@@ -9,82 +9,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script defer src="/js/datePicker.js"></script>
+    <script defer src="/js/delete.js"></script>
     <link rel="stylesheet" href="/main.css">
     <title>Edit Event</title>
 </head>
 <body class="events">
     <%- include('../partials/navbar.ejs') %>
-     
+    
     <h1>Edit: <%= oneEvent.title %> </h1>
-    <h3>Description:</h3>
-    <p><%= oneEvent.content %></p>
-    <br>
-    <form method="POST" action="/events/<%= oneEvent._id%>?_method=PUT">
-       
-        <!-- ?_method=PUT" is a common work around to put the PUT method into the action -->
-        <p><label for="title">Edit Title:</label><br>
-        <input name="title" type="text" placeholder="<%= oneEvent.title %>"></p>
-        
-        <p><label for="title">Edit Description:</label><br>
-        <input name="content" type="text" placeholder="<%= oneEvent.content %>"> </p>
-        
-        <p><label for="date">Edit Date:</label><br>
-        <input type="text" name="date" placeholder="<%= oneEvent.date %>"></p>
-        
-        <p><select class="form-select" aria-label="Default select example" name="photographer">
-            <option selected>Choose your photographer</option>
-            <option value="Becca Murry">Becca Murry</option>
-            <option value="Electric Love">Electric Love</option>
-            <option value="Meghan Shmolka">Meghan Shmolka</option>
-            <option value="Other">Other</option>
-        </select></p>
+    <div> 
+        <form class="events-edit" method="POST" action="/events/<%= oneEvent._id%>?_method=PUT">
+            <span class="left-column">    
+                <p><label for="title">Edit Title:</label><br>
+                <input name="title" type="text" placeholder="<%= oneEvent.title %>"></p>
+                
+                <p><label for="date">Edit Date:</label><br>
+                    <input type="text" name="date" placeholder="<%= oneEvent.date %>"></p>
+                
+                <p><label for="title">Edit Description:</label><br>
+                <textarea id="desc-box" name="content" type="text" placeholder="<%= oneEvent.content %>"></textarea></p>
+            </span>
 
-        <p><select class="form-select" aria-label="Default select example" name="officiator">
-            <option selected>Choose your officiator</option>
-            <option value="Kate Talbot">Kate Talbot</option>
-            <option value="Christa Deane">Christa Deane</option>
-            <option value="Sarah Lemp">Sarah Lemp</option>
-            <option value="Other">Other</option>
-        </select></p>
+            <span class="right-column">
+                <p><select class="form-select" aria-label="Default select example" name="photographer">
+                    <option selected>Choose your photographer</option>
+                    <option value="Becca Murry">Becca Murry</option>
+                    <option value="Electric Love">Electric Love</option>
+                    <option value="Meghan Shmolka">Meghan Shmolka</option>
+                    <option value="Other">Other</option>
+                </select></p>
 
-        <p><select class="form-select" aria-label="Default select example" name="venue">
-            <option selected>Choose your venue</option>
-            <option value="San Francisco City Hall">San Francisco City Hall</option>
-            <option value="The Mountain House Estate">The Mountain House Estate</option>
-            <option value="Holeman Ranch">Holeman Ranch</option>
-        </select></p>
-        
-        <p><select class="form-select" aria-label="Default select example" name="caterer">
-            <option selected>Choose your caterer</option>
-            <option value="California Catering">California Catering</option>
-            <option value="Paradise Catering">Paradise Catering</option>
-            <option value="Cultinary Excellence">Cultinary Excellence</option>
-        </select></p>
+                <p><select class="form-select" aria-label="Default select example" name="officiator">
+                    <option selected>Choose your officiator</option>
+                    <option value="Kate Talbot">Kate Talbot</option>
+                    <option value="Christa Deane">Christa Deane</option>
+                    <option value="Sarah Lemp">Sarah Lemp</option>
+                    <option value="Other">Other</option>
+                </select></p>
 
-        <p><select class="form-select" aria-label="Default select example" name="baker">
-            <option selected>Choose your baker</option>
-            <option value="Patisserie Angelica">Patisserie Angelica</option>
-            <option value="Lafayette Bakery and Cafe">Lafayette Bakery and Cafe</option>
-            <option value="Cakes Made by M.E.">Cakes Made by M.E.</option>
-        </select></p>
+                <p><select class="form-select" aria-label="Default select example" name="venue">
+                    <option selected>Choose your venue</option>
+                    <option value="San Francisco City Hall">San Francisco City Hall</option>
+                    <option value="The Mountain House Estate">The Mountain House Estate</option>
+                    <option value="Holeman Ranch">Holeman Ranch</option>
+                </select></p>
+                
+                <p><select class="form-select" aria-label="Default select example" name="caterer">
+                    <option selected>Choose your caterer</option>
+                    <option value="California Catering">California Catering</option>
+                    <option value="Paradise Catering">Paradise Catering</option>
+                    <option value="Cultinary Excellence">Cultinary Excellence</option>
+                </select></p>
 
-        <p><select class="form-select" aria-label="Default select example" name="musician">
-            <option selected>Choose your musician</option>
-            <option value="Mark Hardin">Mark Hardin</option>
-            <option value="The Wedding DJ Company">The Wedding DJ Company</option>
-            <option value="The Lucky Devil's Band">The Lucky Devil's Band</option>
-        </select></p>
+                <p><select class="form-select" aria-label="Default select example" name="baker">
+                    <option selected>Choose your baker</option>
+                    <option value="Patisserie Angelica">Patisserie Angelica</option>
+                    <option value="Lafayette Bakery and Cafe">Lafayette Bakery and Cafe</option>
+                    <option value="Cakes Made by M.E.">Cakes Made by M.E.</option>
+                </select></p>
 
-        <p><input type="submit"></p>
-    </form>
-    <p>
-    <form action="/events/<%= oneEvent %>?_method=DELETE">
-        <p>
-            <input type="submit" value="Delete this event">
-        </p>
-    </form>
-    </p>
+                <p><select class="form-select" aria-label="Default select example" name="musician">
+                    <option selected>Choose your musician</option>
+                    <option value="Mark Hardin">Mark Hardin</option>
+                    <option value="The Wedding DJ Company">The Wedding DJ Company</option>
+                    <option value="The Lucky Devil's Band">The Lucky Devil's Band</option>
+                </select></p>
+            
+                <input class="edit-btns" type="submit">
+                <button id="delete-btn">Delete this event</button>
+            </span>
+        </form>
 
+        <!-- <form action="/events/<%= oneEvent %>?_method=DELETE">
+            <span class="delete-btn">
+                <input class="edit-btns" type="submit" value="Delete this event">
+            </span>
+        </form> -->
+
+    </div>
 
 </body>
 </html>
