@@ -12,22 +12,29 @@
 <body class="services">
     <%- include('../partials/navbar.ejs') %>
 
-    <h1>Edit page for "<%= oneVender.title %>"</h1>
+    <h1>Edit page for "<%= oneVendor.title %>"</h1>
     <p><%= oneVendor.content %></p>
     <br>
     <form method="POST" action="/vendors/<%= oneVendor._id%>?_method=PUT">
-        <!-- ?_method=PUT" is a common work around to put the PUT method into the action -->
-        <label for="title">Edit Vendor:</label>
-        <input name="title" type="text" placeholder="<%= oneVendor.title %>">
+        <input type="text" name="title" placeholder="<%= oneVendor.title %>">
         <br>
-        <label for="title">Edit Vendor Description:</label>
-        <input name="content" type="text" placeholder="<%= oneVendor.content %>">
+        <input type="text" name="content" placeholder="<%= oneVendor.title %>" >
         <br>
-<!-- Insert drop-down of options for types -->
-<!-- This page has info on making drop-downs as inputs -->
-<!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
-        <input type="submit">
-    </form>
+        <select class="form-select" aria-label="vendorType" name="type" id="type">
+            <!-- Displays current vendor type -->
+            <option selected>
+                <%= oneVendor.type %>
+            </option>
+            <!-- Begin JS: creates options for vendor type that are not the current selection -->
+            <% let optArray = ['photographer', 'officiator', 'venue', 'caterer', 'baker', 'musician']; %>
+            <% for(let i=0; i < optArray.length; i++) {  %>
+                <%     if (optArray[i] != oneVendor.type) {  %>
+                    <option value="<%= optArray[i] %>"><%= optArray[i] %></option>
+                    <%     i++;  %>
+                    <% };};  %>
+            <!-- End JS -->
+        </select>
+        </form>
     <p>
     <form action="/vendors/<%= oneVendor %>?_method=DELETE">
         <p>

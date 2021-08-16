@@ -3,13 +3,15 @@
 
 - Vendor functionality
     --> Test routes
-    
+    --> Test vendor new and vender edit
+    --> Write vendor show page 
+
 -------------------------------------
 // Doing Today
 
 - Build out the services pages
 - Fix the Navbar
-- Fix flexbox???
+- Fix flexbox??? Or switch to grid? Grid might work better for what we want
 - Drop-down on homepage
 
 -------------------------------------
@@ -26,6 +28,8 @@
 - Basic vendor infrastructure
 - Vendor boilerplate code
 - Vendor functionality begun - controllers implemented
+    --> Vender edit created, needs testing
+    --> Vendor new created, needs testing
 
 - Uploaded images
 

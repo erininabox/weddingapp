@@ -29,9 +29,10 @@ router.get('/:id', (req, res) => {
 
 //CREATE
 router.post('/', (req, res) => {
+    console.log(req.body);
     db.Vendor.create(req.body, (err, createdVendor) => {
-        if (err) return console.log(err);
-        res.redirect('vendors');
+        if (err) {res.send(err)};
+        res.redirect('vendors/');
     });
   });
 
