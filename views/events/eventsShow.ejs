@@ -14,6 +14,7 @@
     <h1>Your Event</h1>
     <h2 class="showh2"><%= oneEvent.title %></h2>
     <div class="events-body">
+        <p class="events-add-btn"><button><a href="/events/<%= oneEvent._id %>/edit">Edit this Event</a></button></p>
     <p>Description: <%= oneEvent.content %></p>
     <p>Date: <%= oneEvent.date %></p>
     <p>Photographer: <%= oneEvent.photographer %></p>
@@ -23,7 +24,7 @@
     <p>Baker: <%= oneEvent.baker %></p>
     <p>Musician: <%= oneEvent.musician %></p>
     </div>
-    <p class="events-add-btn"><button><a href="/events/<%= oneEvent._id %>/edit">Edit this Event</a></button>
+
 
 </body>
 </html>
