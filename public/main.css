@@ -385,7 +385,13 @@ a.bakers:hover{
     background-size: 100%;
     background-attachment: fixed;
 }
-
+.werd{
+    background-image: url('imgs/backgrounds/werd.jpg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: 100%;
+    background-attachment: fixed; 
+}
 /* .officiant affects the body officiant page */
 .officiantbg{
     background-image: url('imgs/backgrounds/vows.jpg');
