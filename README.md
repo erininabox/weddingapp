@@ -1,5 +1,4 @@
 # Wedding App
-HEY YOU THERE
 
 The Wedding App is an event planning app that provides users with tools to organize their wedding.
 
@@ -10,12 +9,14 @@ The Wedding App is an event planning app that provides users with tools to organ
 * HTML
 * CSS
 * JavaScript
-
+* Express
+* Node.JS
+* Mongoose
 
 ## Existing Features
 
-* Users can add event projects
-* Within events, users can add dates and vendors
+* Users can add and delete event projects to their wedding app
+* Within events, users can pick a date and add vendors from dropdown menu items
 * Vendors' details can be added, currently including name, phone number, and website
 * Users can update/delete events
 * Users can update/delete vendors

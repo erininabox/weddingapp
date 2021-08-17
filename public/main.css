@@ -15,21 +15,24 @@
 }
 .fade-in{
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeIn 2s ease-in forwards;
 }
-h1.fade-in{
-    margin-top: 250px;
-    margin-bottom: -70px;
-    text-shadow: 0 0 32px rgb(239, 240, 159);
-}
+
 
 h1 {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 100px;
     color: rgb(38 34 98);
+    text-shadow: 0 0 32px rgb(215, 243, 246);
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+h1.fade-in{
+    font-size: 130px;
+    margin-top: 240px;
+    margin-bottom: -110px;
+    text-shadow: 0 0 32px rgb(239, 240, 159);
 }
 /* Homepage */
 .homeTitle {
@@ -113,7 +116,7 @@ div.navigate {
 /* Grid boxes */
 
 .index-services {
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, 0.722);
     padding: 6px;
     align-self: center;
     grid-column: 1;
@@ -132,7 +135,7 @@ div.navigate {
     grid-column: 2;
 }
 .index-events {
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, 0.722);
     padding: 6px;
     width: 200px;
     align-self: center;
@@ -149,10 +152,21 @@ div.navigate {
     transition: .5s;
 }
 /* Services Page */
+.servicestitle{
+    margin-bottom: 22px;
+}
 .services-page {
     display:inline-block;
     width: 300px;
     background: rgba(255, 255, 255, .6);
+    padding: 6px;
+    align-self: center;
+}
+.services-page:hover {
+    display:inline-block;
+    width: 300px;
+    color: white;
+    background: rgba(86, 84, 130, 0.6);
     padding: 6px;
     align-self: center;
 }
@@ -224,7 +238,6 @@ p.about{
 /* Events Index Page*/
 .events-add-btn{
     text-align: center;
-    color: black;  
 }
 .events-all{
     margin-left: 10%;
@@ -249,7 +262,6 @@ p.about{
     transition: 1s;
     color:rgb(85, 82, 82)
 }
-
 .form-select{
     border: .5px solid rgb(47, 46, 46);
     font-size: .85em;
@@ -278,17 +290,53 @@ p.about{
 }
 
 /* Photographers Page */
+.photobox{
+    background: rgba(255, 255, 255, .7);
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 0 auto;
+}
+.photographers{
+    width: 100%;
+}
+.photo-column{
+    margin-left: 3vw;
+}
 p.photobody {
     color: rgb(43, 39, 39);
-    margin-left: 20px;
+     width: 100%;
+     padding: 4px;
 }
 a.photo{
     color: rgb(43, 39, 39);
 }
-
+a.photo:hover{
+    color: rgb(67, 10, 240);
+    transition: 1s;
+}
 #carouselExampleSlidesOnly{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
+}
+
+/* Officients Page */
+a.officiant{
+    color: rgb(43, 39, 39);
+}
+a.officiant:hover{
+    color: rgb(67, 10, 240);
+    transition: 1s;
+}
+
+/* Bakers Page */
+a.bakers{
+    color: rgb(43, 39, 39);
+}
+a.bakers:hover{
+    color: rgb(67, 10, 240);
+    transition: 1s;
 }
 /* Background images */
 /* .home affects only the Homepage */
@@ -313,6 +361,31 @@ a.photo{
     background-repeat: no-repeat;
     background-position: top, center;
     background-size: 100%;
+}
+/* .photobg affects body of photo page */
+.photobg{
+    background-image: url('imgs/backgrounds/camera1.jpg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+/* .bakersbg affects body of photo page */
+.bakersbg{
+    background-image: url('imgs/backgrounds/wedcake.jpg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* .officiant affects the body officiant page */
+.officiantbg{
+    background-image: url('imgs/backgrounds/vows.jpg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 /* .about affects body of about page ejs file */
