@@ -362,6 +362,13 @@ a.bakers:hover{
     background-position: top, center;
     background-size: 100%;
 }
+/* .bandbg affects all services/vendors ejs files */
+.bandbg{
+    background-image: url('imgs/backgrounds/band.jpg');
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: 100%;
+}
 /* .photobg affects body of photo page */
 .photobg{
     background-image: url('imgs/backgrounds/camera1.jpg');

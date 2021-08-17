@@ -9,7 +9,7 @@ const vendorsController = require('./controllers/vendorsController.js');
 
 /* CONFIGURATION */
 const app = express();
-const port = port;
+const port = 4000;
 app.set('view engine', 'ejs');
 const rowdyResults = rowdy.begin(app);
 
