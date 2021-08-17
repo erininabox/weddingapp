@@ -8,17 +8,15 @@ The Wedding App is an event planning app that provides users with tools to organ
 ## Technologies Used
 
 * HTML
-* CSS
-* JavaScript
+* CSS (Bootstrap, flexbox, grid)
+* JavaScript (EJS, MVC)
 
 
 ## Existing Features
 
-* Users can add event projects
-* Within events, users can add dates and vendors
-* Vendors' details can be added, currently including name, phone number, and website
+* Users can add and view event projects
+* Within events, users can add dates, vendors, and notes
 * Users can update/delete events
-* Users can update/delete vendors
 * Users can view vendors by type
 
 
