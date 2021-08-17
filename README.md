@@ -2,7 +2,7 @@
 
 The Wedding App is an event planning app that provides users with tools to organize their wedding.
 
-[Link to project hosted on Heroku]()
+[Link to project hosted on Heroku](https://weddapp.herokuapp.com/)
 
 ## Technologies Used
 
